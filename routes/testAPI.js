@@ -8,7 +8,6 @@ router.get('/', function(req, res, next) {
 
     let rawdata = fs.readFileSync('sample.json');
     let data = JSON.parse(rawdata);
-    console.log(data);
 
     res.send(data);
 });
